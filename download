@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [[ -e SOURCES/$1 ]]
+  then echo "SOURCES/$1 present, skipping download"
+else
+  wget $2
+  mv $1 SOURCES/$1
+fi
