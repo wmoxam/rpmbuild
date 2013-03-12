@@ -1,0 +1,3 @@
+%packager %(echo Pressly)/rpmbuild
+%_topdir %(echo $HOME)/rpmbuild
+%_tmppath %(echo $HOME)/rpmbuild/tmp
