@@ -1,5 +1,6 @@
 *.un~
 *tar.gz
+*tar.gz.1
 BUILD/*
 SOURCES/*
 tmp/*

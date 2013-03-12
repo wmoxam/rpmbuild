@@ -1,3 +1,6 @@
+%define _prefix         /usr/local
+%define _datadir        /usr/local/share
+%define _mandir         /usr/local/share/man
 %define ver  0.8.22
 %define rel  1
 %define jobs 2
