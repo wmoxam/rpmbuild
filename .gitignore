@@ -1,5 +1,7 @@
+*.un~
 *tar.gz
 BUILD/*
 SOURCES/*
 tmp/*
 *.rpm
+.vagrant
