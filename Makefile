@@ -3,13 +3,15 @@ all: setup nodejs ruby
 	echo "Making All"
 
 setup:
+	sudo cp files/s3tools.repo /etc/yum.repos.d/
+ 	sudo yum -y install s3tools
 	sudo yum -y install rpm-build
 	sudo yum -y install redhat-rpm-config
 	sudo yum groupinstall "Development Tools"
 	echo "cp .rpmmacros ~/"
 	cp .rpmmacros ~/
-
-node_downloaded := $(wildcard */node-v0.8.22.tar.gz)
+        echo "cp .wgetrc ~/"
+        cp .wgetrc ~/
 
 nodejs:
 	./download node-v0.8.22.tar.gz http://nodejs.org/dist/v0.8.22/node-v0.8.22.tar.gz
