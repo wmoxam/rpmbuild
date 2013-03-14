@@ -1,5 +1,7 @@
 #!/bin/sh
 
+createrepo RPMS
+
 FILES="RPMS/*/$1*"
 
 for f in $FILES
