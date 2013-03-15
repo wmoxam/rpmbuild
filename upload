@@ -7,5 +7,5 @@ FILES="RPMS/*/$1*"
 for f in $FILES
 do
   echo "Processing $f"
-  s3cmd put $f s3://aws.pressly.com/$f
+  s3cmd -P put $f s3://aws.pressly.com/$f
 done
