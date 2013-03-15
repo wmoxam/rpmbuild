@@ -11,8 +11,13 @@ To develop packages:
     $ cd rpmbuild && ./setup  
   
     add/edit a spec in rpmbuild/SPEC
+    add build deps, etc to Makefile
+    
+    $ make 'name_of_package'
 
-    $ rpmbuild -ba SPEC/whatever.spec
 
-For easy hosting this looks reasonable: https://github.com/jbraeuer/yum-s3-plugin
+Hosting
+
+    $ s3cmd --configure
+    $ make upload name_of_package
 
