@@ -1,6 +1,8 @@
 %define _prefix  	/usr/local
 %define _datadir        /usr/local/share
 %define _mandir		/usr/local/share/man
+%define _libdir		/usr/local/lib
+%define _includedir	/usr/local/include
 %define rubyver         1.9.3
 %define rubyminorver    p392
 
@@ -32,7 +34,6 @@ export CFLAGS="$RPM_OPT_FLAGS -Wall -fno-strict-aliasing"
 
 %configure \
   --prefix /usr/local \
-  --enable-shared \
   --disable-rpath \
   --without-X11 \
   --without-tk \
