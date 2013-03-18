@@ -22,6 +22,10 @@ nodejs:
 	./download node-v0.8.22.tar.gz http://nodejs.org/dist/v0.8.22/node-v0.8.22.tar.gz
 	rpmbuild -ba SPECS/nodejs.spec
 
+libyaml:
+	./download yaml-0.1.4.tar.gz http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz
+	rpmbuild -ba SPECS/libyaml.spec
+
 ruby:
 	./download ruby-1.9.3-p392.tar.gz http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p392.tar.gz
 	rpmbuild -ba SPECS/ruby.spec
