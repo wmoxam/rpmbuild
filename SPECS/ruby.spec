@@ -16,7 +16,7 @@ URL:            http://www.ruby-lang.org/
 
 Source0:        http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-%{rubyver}-%{rubyminorver}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires:  readline readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel tcl-devel gcc unzip openssl-devel db4-devel byacc make
+BuildRequires:  libyaml readline readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel tcl-devel gcc unzip openssl-devel db4-devel byacc make
 
 Provides: ruby1.9
 
