@@ -6,7 +6,7 @@
 %define rubyver         1.9.3
 %define rubyminorver    p392
 
-Name:           ruby19
+Name:           presslyruby
 Version:        %{rubyver}%{rubyminorver}
 Release:        1%{?dist}
 Summary:        An interpreter of object-oriented scripting language
@@ -18,7 +18,8 @@ Source0:        http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-%{rubyver}-%{rubymino
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  libyaml readline readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel tcl-devel gcc unzip openssl-devel db4-devel byacc make
 
-Provides: ruby1.9
+Provides: presslyruby
+Obsoletes: presslyruby
 
 %description
 Ruby is the interpreted scripting language for quick and easy
