@@ -26,6 +26,11 @@ libyaml:
 	./download yaml-0.1.4.tar.gz http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz
 	rpmbuild -ba SPECS/libyaml.spec
 
-ruby:
+ruby19:
 	./download ruby-1.9.3-p392.tar.gz http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p392.tar.gz
-	rpmbuild -ba SPECS/ruby.spec
+	rpmbuild -ba SPECS/ruby19.spec
+
+ruby20:
+	./download ruby-2.0.0-p0.tar.gz ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p0.tar.gz
+	rpmbuild -ba SPECS/ruby20.spec
+
