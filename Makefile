@@ -4,7 +4,7 @@ all: setup redis nodejs ruby
 
 setup:
 	sudo cp files/s3tools.repo /etc/yum.repos.d/
-	sudo yum -y install s3tools
+	sudo yum -y install s3cmd
 	sudo yum -y install rpm-build createrepo
 	sudo yum -y install redhat-rpm-config
 	sudo yum groupinstall "Development Tools"a

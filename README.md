@@ -8,8 +8,8 @@ To develop packages:
 
     $ vagrant up
     $ git clone https://github.com/wmoxam/rpmbuild
-    $ cd rpmbuild && ./setup  
-  
+    $ cd rpmbuild && make setup
+
     add/edit a spec in rpmbuild/SPEC
     add build deps, etc to Makefile
     
