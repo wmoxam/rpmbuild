@@ -1,5 +1,5 @@
 
-all: setup redis nodejs ruby
+all: setup redis nodejs libyaml ruby19 ruby20
 	echo "Making All"
 
 setup:
@@ -11,8 +11,6 @@ setup:
 	sudo yum install -y readline-devel ncurses-devel gdbm-devel tcl-devel openssl-devel db4-devel byacc
 	echo "cp .rpmmacros ~/"
 	cp .rpmmacros ~/
-	echo "cp .wgetrc ~/"
-	cp .wgetrc ~/
 
 redis:
 	./download redis-2.6.11.tar.gz http://redis.googlecode.com/files/redis-2.6.11.tar.gz

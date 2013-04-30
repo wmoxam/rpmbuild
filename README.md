@@ -7,12 +7,13 @@ Custom RPMs for OSs with outdated/missing packages
 To develop packages:
 
     $ vagrant up
+    $ sudo yum -y install git
     $ git clone https://github.com/wmoxam/rpmbuild
     $ cd rpmbuild && make setup
 
     add/edit a spec in rpmbuild/SPEC
     add build deps, etc to Makefile
-    
+
     $ make 'name_of_package'
 
 
