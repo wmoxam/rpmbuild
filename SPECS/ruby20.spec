@@ -4,7 +4,7 @@
 %define _libdir		/usr/local/lib
 %define _includedir	/usr/local/include
 %define rubyver         2.0.0
-%define rubyminorver    p0
+%define rubyminorver    p247
 
 Name:           PresslyRuby20
 Version:        %{rubyver}%{rubyminorver}
