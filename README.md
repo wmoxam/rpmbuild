@@ -5,7 +5,7 @@ Custom RPMs for OSs with outdated/missing packages
 *glares at Amazon Linux* 
 
 To develop packages:
-
+ 
     $ vagrant up
     $ sudo yum -y install git
     $ git clone https://github.com/wmoxam/rpmbuild
@@ -20,5 +20,5 @@ To develop packages:
 Hosting
 
     $ s3cmd --configure
-    $ make upload name_of_package
+    $ ./upload
 

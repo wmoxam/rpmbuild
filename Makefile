@@ -29,6 +29,8 @@ ruby19:
 	rpmbuild -ba SPECS/ruby19.spec
 
 ruby20:
-	./download ruby-2.0.0-p0.tar.gz ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p0.tar.gz
+	make libyaml
+	sudo rpm -ivh RPMS/x86_64/libyaml-0.1.4-1.x86_64.rpm 
+	./download ruby-2.0.0-p247.tar.gz ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
 	rpmbuild -ba SPECS/ruby20.spec
 
